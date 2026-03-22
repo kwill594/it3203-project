@@ -1,3 +1,95 @@
+/* GENERAL PAGE STYLE */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #1e1e2f;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HOVER EFFECT */
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* MAIN CONTENT BOX */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+/* TABLE STYLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #1e1e2f;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+}
+
+/* IMAGES */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e1e2f;
+    color: white;
+    margin-top: 30px;
+}
+
 img {
     width: 150px;
     border-radius: 50%;
