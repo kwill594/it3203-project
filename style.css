@@ -29,8 +29,9 @@ nav ul li a {
 }
 
 /* HOVER EFFECT */
-nav ul li a:hover {
-    color: #00bcd4;
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 /* MAIN CONTENT BOX */
@@ -76,9 +77,12 @@ td, th {
 /* IMAGES */
 img {
     display: block;
-    margin: 20px auto;
-    width: 200px;
-    border-radius: 10px;
+    margin: 25px auto;
+    width: 180px;
+    border-radius: 50%; /* makes it circular */
+    border: 4px solid #1e1e2f;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* FOOTER */
