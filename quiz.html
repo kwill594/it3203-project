@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAVIGATION -->
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -27,29 +29,24 @@
 
 <form id="quizForm">
 
-<!-- Fill in the blank -->
 <p>1. The first web browser was created by:</p>
 <input type="text" id="q1">
 
-<!-- Multiple Choice -->
 <p>2. Which browser introduced graphics?</p>
 <input type="radio" name="q2" value="a"> Internet Explorer<br>
 <input type="radio" name="q2" value="b"> Mosaic<br>
 <input type="radio" name="q2" value="c"> Chrome<br>
 
-<!-- Multiple Choice -->
 <p>3. Which company created Chrome?</p>
 <input type="radio" name="q3" value="a"> Microsoft<br>
 <input type="radio" name="q3" value="b"> Google<br>
 <input type="radio" name="q3" value="c"> Apple<br>
 
-<!-- Multiple Choice -->
 <p>4. What does HTTPS provide?</p>
 <input type="radio" name="q4" value="a"> Speed<br>
 <input type="radio" name="q4" value="b"> Security<br>
 <input type="radio" name="q4" value="c"> Storage<br>
 
-<!-- Multi-select -->
 <p>5. Select browser features:</p>
 <input type="checkbox" value="a"> Rendering Engine<br>
 <input type="checkbox" value="b"> JavaScript Engine<br>
@@ -66,34 +63,8 @@
 
 </main>
 
-<script>
-function checkQuiz() {
-    let score = 0;
-
-    // Q1
-    let q1 = document.getElementById("q1").value.toLowerCase();
-    if (q1.includes("tim")) score++;
-
-    // Q2
-    if (document.querySelector('input[name="q2"]:checked')?.value === "b") score++;
-
-    // Q3
-    if (document.querySelector('input[name="q3"]:checked')?.value === "b") score++;
-
-    // Q4
-    if (document.querySelector('input[name="q4"]:checked')?.value === "b") score++;
-
-    // Q5
-    let checks = document.querySelectorAll('input[type="checkbox"]:checked');
-    if (checks.length >= 2) score++;
-
-    // Result
-    let resultText = "Score: " + score + "/5<br>";
-    resultText += (score >= 3) ? "PASS ✅" : "FAIL ❌";
-
-    document.getElementById("result").innerHTML = resultText;
-}
-</script>
+<!-- LINK JS FILE -->
+<script src="script.js"></script>
 
 </body>
 </html>
