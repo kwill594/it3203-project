@@ -126,3 +126,55 @@ img {
     border: 3px solid #333;
     margin-top: 10px;
 }
+
+/* MOBILE FIRST (default styles already apply) */
+
+/* TABLE RESPONSIVE */
+table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+/* IMAGE RESPONSIVE */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* NAVBAR MOBILE */
+nav ul {
+    flex-wrap: wrap;
+}
+
+/* SMALL SCREEN (phones) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+/* MEDIUM SCREEN (tablets) */
+@media (max-width: 900px) {
+    main {
+        max-width: 95%;
+    }
+
+    img {
+        width: 80%;
+    }
+}
